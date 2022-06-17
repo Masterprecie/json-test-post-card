@@ -40,7 +40,7 @@ function createPost(e) {
     .then((response) => response.json())
     .then((data)=> {
         console.log(data)
-        postBox.push(data);
+        postBox.unshift(data);
         console.log(postBox)
         let postHolder = '';
         postBox.forEach(post => {
@@ -53,7 +53,8 @@ function createPost(e) {
                             <p id="post-body">${post.body}</p>
                             <div class="d-flex justify-content-between">
                             <button class="btn btn-success" id="view-btn" onclick="openSingle(${post.id})">view</button>
-                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary" onclick="updatePost(${post.id})">Update</button>
+                            <button class="btn btn-danger" onclick="deletePost(${post.id})">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -61,7 +62,7 @@ function createPost(e) {
         });
         postWrapper.innerHTML = postHolder;
     })
-    alert ('Post uploaded successfully')
+    alert ('Click Ok to Create Post')
 }
 
 
@@ -103,6 +104,7 @@ function updatePost(id) {
                 }
             })
         });
+        alert ('Click OK to update Post')
     }
 
 
@@ -128,7 +130,7 @@ function deletePost(id) {
             renderUI(postBox)  
         })
 
-        alert ('Post deleted successfully')
+        alert ('Click OK to delete Post')
 }
 
 
