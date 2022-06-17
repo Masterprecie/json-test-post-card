@@ -34,10 +34,20 @@ ul li:hover::after{
     font-weight: 700;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 769px) {
     .landing h1{
         font-size: 50px;
     }
+    ul li::after{
+        display: none!important;
+    }
+   .view-card {
+    width: 100%!important;
+    padding-bottom: 100px!important;
+   }
+   .post-cont{
+    padding-top: 50px!important;
+}
 }
 
 .landing h5{
