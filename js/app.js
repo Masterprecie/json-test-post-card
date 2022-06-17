@@ -106,7 +106,7 @@ function updatePost(id) {
                 }
             })
         });
-}
+    }
 
 
 function openSingle(id) {
@@ -150,7 +150,8 @@ function renderUI (arr) {
                                 <p class="post-body">${post.body}</p>
                                 <div class="d-flex justify-content-between">
                                     <button class="btn btn-success" id="view-btn" onclick="openSingle(${post.id})">View Post</button>
-                                   <button class="btn btn-danger" onclick="deletePost(${post.id})">Delete</button>
+                                    <button class="btn btn-primary" onclick="updatePost(${post.id})">Update</button>
+                                    <button class="btn btn-danger" onclick="deletePost(${post.id})">Delete</button>
                                 </div>
                             </div>
                         </div>

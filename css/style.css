@@ -112,3 +112,11 @@ ul li:hover::after{
     }
 }
     
+@media (max-width:426px) {
+    footer .container{ 
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
