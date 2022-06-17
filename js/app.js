@@ -12,9 +12,7 @@ let postBox = [];
 function getPosts() {
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then((response) => response.json())
-        .then((data) => {
-            console.log(postBox)
-            //    console.log(data)
+        .then((data) => {          
             postBox = data
             renderUI(postBox)
         })
@@ -28,7 +26,6 @@ postForm.addEventListener('submit', createPost)
 
 function createPost(e) {
     e.preventDefault();
-    // console.log(title.value, body.value)
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify({
@@ -113,10 +110,8 @@ function openSingle(id) {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
             localStorage.setItem('viewedPost', JSON.stringify(data))
             window.location.href = 'view.html'
-            // console.log(data)
         });
 }
 
@@ -159,5 +154,4 @@ function renderUI (arr) {
                 `
             });
             postWrapper.innerHTML = postHolder;
-
 }
