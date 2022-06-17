@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    <title>Welcome to Presh Blog</title>
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand m-0" href="index.html">Presh Blog</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                      </li>
+                      
+                      <li class="nav-item ">
+                        <a class="nav-link text-dark" href="view.html">VIEW POST</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link text-dark" href="post.html">POST</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex align-items-center justify-content-between" >                    
+                      <button class="btn btn-outline-success ms-2" type="submit">Get Started</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+    </header>
+    <main>
+        <div class="container-fluid landing">
+            <div class="container">
+                <div class="row pt-5" >                  
+                    <div class="col-lg-6 text-light"data aos = "fade-left">
+                        <h1 class="mb-5">Create a Post</h1>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi 
+                            expedita culpa ex,quaerat corrupti soluta voluptatibus aliquid exercitationem 
+                            facere consequuntur quod perspiciatis sint vero, cum quos quisquam eos commodi!
+                        </h5>
+                        <a href="post.html" class="btn btn-outline-light"> Create a Post </a>
+                      </div>
+                    <div class="col-lg-6" data aos = "fade-left">
+                        <img src="./img/img1.jpg" class="w-100" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+   
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script>
+      AOS.init({
+        offset: 100,
+        duration: 500,
+      });
+
+      document.querySelectorAll('img')
+        .forEach (img => {
+          img.addEventListener('load', () => {
+            AOS.refresh();
+          });
+        });        
+       
+    </script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
