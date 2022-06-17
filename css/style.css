@@ -21,12 +21,12 @@ ul li:hover::after{
 .landing {
     background: url(../img/bg4.avif) ;
     background-color: #f8dfdb;
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 120px;
+    padding-bottom: 200px;
 }
 
 .landing h1{
@@ -34,9 +34,15 @@ ul li:hover::after{
     font-weight: 700;
 }
 
+@media (max-width: 426px) {
+    .landing h1{
+        font-size: 50px;
+    }
+}
+
 .landing h5{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
 }
 
